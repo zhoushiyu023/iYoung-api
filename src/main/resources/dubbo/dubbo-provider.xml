@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://code.alibabatech.com/schema/dubbo
+    http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+	<!--  add by taoran 2016-11-16 begin. -->
+	<!--<dubbo:service timeout="10000" cluster="failfast" ref="priceServiceFacade" interface="com.ipr.price.facade.service.IPriceServiceFacade" />-->
+	<!--<dubbo:service timeout="10000" cluster="failfast" ref="servicePriceFacade" interface="com.ipr.price.facade.service.IServicePriceFacade" />-->
+	<!--  add by taoran 2016-11-16 end. -->
+
+	<dubbo:service timeout="10000" cluster="failfast" ref="demoService" interface="com.zsy.iYoung.demo.DemoService" />
+
+</beans>
